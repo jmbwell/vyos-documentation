@@ -103,8 +103,10 @@ avoid to be tracked by the provider of your upstream DNS server.
 
 .. cfgcmd:: set service dns forwarding listen-address
 
-   The local IPv4 or IPv6 addresses to bind the DNS forwarder to. The forwarder will listen on this address for
+   A local IPv4 or IPv6 address to bind the DNS forwarder to. The forwarder will listen on this address for
    incoming connections.
+   
+   To listen on all interfaces, specify 0.0.0.0 (IPv4) or :: (IPv6).
 
 Example
 =======
